@@ -1,81 +1,204 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cemre Bozdoğan | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cemre Bozdoğan | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    padding:20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+    opacity:.9;
+}
+
+.btn{
+    margin-top:30px;
+    display:inline-block;
+    padding:14px 28px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:#2563eb;
+    padding:12px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+}
+</style>
+
 </head>
 <body>
 
 <header>
     <h1>Cemre Bozdoğan</h1>
-    <p>Computer Science Student</p>
+    <p>💻 Computer Science Student</p>
+
+    <a class="btn" href="assets/cv.pdf" target="_blank">
+        📄 View My CV
+    </a>
 </header>
 
-<section id="about">
+<section>
     <h2>About Me</h2>
-    <p>
-        I am Cemre, a student with a passion for technology and software
-        development. I enjoy improving my programming knowledge, learning new
-        technologies, and collaborating on projects that solve practical
-        problems. I aim to continuously develop my technical and communication
-        skills while contributing to innovative software solutions.
-    </p>
+
+    <div class="card">
+        <p>
+            Hello! I'm Cemre Bozdoğan, a passionate Computer Science student
+            with an interest in software development, web technologies,
+            and problem solving. I enjoy learning new technologies and
+            continuously improving my programming skills through projects
+            and practical experience.
+        </p>
+    </div>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <h3>Şehit Murat Erdem Anatolian High School</h3>
-    <p>2020 – 2024</p>
-    <p>Graduated with Honors (GPA: 74.25/100)</p>
+<section>
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+         <div class="skill">Python</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Microsoft Office</div>
+        <div class="skill">Problem Solving</div>
+    </div>
 </section>
 
-<section id="languages">
-    <h2>Languages</h2>
-    <ul>
-        <li>Turkish – Native</li>
-        <li>English – B1 Level</li>
-    </ul>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Fast Learner</li>
-        <li>Adaptability</li>
-        <li>Problem Solving</li>
-        <li>Microsoft Office Programs</li>
-        <li>Basic Level Python</li>
-    </ul>
-</section>
-
-<section id="certificates">
+<section>
     <h2>Certificates</h2>
-    <ul>
-        <li> Akın Dil Language School – C1 English Certificate</li>
-        <li>British Council IELTS – Overall Score: 6.5</li>
-    </ul>
+
+    <div class="card">
+        ✅ IELTS Overall Band Score: 6.5
+        <br><br>
+        ✅ Akın Dil Language School – C1 English Certificate
+    </div>
 </section>
 
-<section id="projects">
+<section>
     <h2>Projects</h2>
-    <p>
-        This portfolio website showcases my education, technical skills,
-        certificates, and future software development projects. More projects
-        will be added as I continue my studies and gain experience.
-    </p>
+
+    <div class="project-grid">
+
+        <div class="project">
+            <h3>🌐 Portfolio Website</h3>
+            <p>Responsive portfolio website developed using HTML and CSS.</p>
+        </div>
+
+        <div class="project">
+            <h3> Basic Python Exercises</h3>
+            <p>Collection of beginner-level Python programming tasks and solutions.</p>
+        </div>
+
+        <div class="project">
+            <h3>  Future Projects</h3>
+            <p>More software engineering and web development projects will be added soon.</p>
+        </div>
+
+    </div>
 </section>
 
-<section id="contact">
+<section>
     <h2>Contact</h2>
-    <p>📞 +90 534 913 14 323</p>
-    <p>📍 Adana, Turkey</p>
+
+    <div class="card">
+        📍 Adana, Türkiye
+        <br><br>
+        📄 CV available through the button at the top of the page.
+    </div>
 </section>
 
 <footer>
-    <p>© 2025 Cemre Bozdoğan</p>
+    <p>© 2025 Cemre Bozdoğan | Built with ❤️ for my Computer Science Portfolio</p>
 </footer>
 
 </body>
 </html>
+```
