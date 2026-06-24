@@ -1,43 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
 }
 
-section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+header{
+    height:100vh;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-h1, h2 {
-    color: #2c3e50;
+.hero h1{
+    font-size:4rem;
 }
 
-header h1 {
-    color: white;
+.hero p{
+    font-size:1.4rem;
+    margin:15px 0 30px;
 }
 
-ul {
-    padding-left: 20px;
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-footer {
-    text-align: center;
-    background-color: #2c3e50;
-    color: white;
-    padding: 15px;
-    margin-top: 30px;
+.btn:hover{
+    transform:scale(1.08);
 }
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skills span{
+    background:#2563eb;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+```
